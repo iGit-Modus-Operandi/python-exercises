@@ -10,3 +10,15 @@ class Canvas:
 
     def hitsWall(self, point):
         return point[0] < 0 or point[0] >= self._x or point[1] < 0 or point[1] >= self._y
+
+    def setPos(self, pos, mark):
+        self._canvas[pos[0]][pos[1]] = mark
+
+    def clear(self):
+        os.system('cls' if os.name == 'nt' else 'clear')
+
+    def print(self):
+        self.clear()
+        for y in range(self._y):
+            print(' '.join([col[y] for col in self._canvas]))
+
