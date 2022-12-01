@@ -22,3 +22,10 @@ class Canvas:
         for y in range(self._y):
             print(' '.join([col[y] for col in self._canvas]))
 
+class TerminalScribe:
+    def __init__(self, canvas):
+        self.canvas = canvas
+        self.trail = '.'
+        self.mark = '*'
+        self.framerate = 0.05
+        self.pos = [0, 0]
