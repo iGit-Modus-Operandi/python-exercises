@@ -50,3 +50,18 @@ class TerminalScribe:
         if not self.canvas.hitsWall(pos):
             self.draw(pos)
 
+    def drawSquare(self, size):
+        i = 0;
+        while i < size:
+            self.right()
+            i = i + 1
+        while i < size:
+            self.down()
+            i = i + 1
+        while i < size:
+            self.left()
+            i = i + 1
+        while i < size:
+            self.up()
+            i = i + 1
+
