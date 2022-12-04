@@ -65,3 +65,14 @@ class TerminalScribe:
             self.up()
             i = i + 1
 
+    def draw(self, pos):
+        self.canvas.setPos(self.pos, self.trail)
+        self.pos = pos
+        self.canvas.setPos(self.pos, colored(self.mark, 'red'))
+        self.canvas.print()
+        time.sleep(self.framerate)
+
+canvas = Canvas(30, 30)
+scribe = TerminalScribe(canvas)
+
+scribe.drawSquare(20)
