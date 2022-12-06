@@ -1,5 +1,5 @@
 # python-exercises
-Notes for core concepts and implementation for a beginner python developer
+Exercises and algorithms for common problems
 
 #### Contents
 * ASCII Art
