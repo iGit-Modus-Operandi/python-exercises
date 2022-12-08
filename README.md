@@ -8,3 +8,5 @@ Exercises and algorithms for common problems
 
 * [**NOTES**] - Accompanying notes discussing the concept
 * [**EXER**] - Implementation of the concept
+
+#### References
