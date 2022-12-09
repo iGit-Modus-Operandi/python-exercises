@@ -51,13 +51,15 @@ class TerminalScribe:
             self.draw(pos)
 
     def drawSquare(self, size):
-        i = 0;
+        i = 0
         while i < size:
             self.right()
             i = i + 1
+        i = 0
         while i < size:
             self.down()
             i = i + 1
+        i = 0
         while i < size:
             self.left()
             i = i + 1
